@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:context="net.lebakcyber.tutorialandroidlebakcyber.MainActivity">
+
+        <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/detail_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="4dp"
+            android:background="#000000"
+            card_view:cardCornerRadius="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:padding="8dp">
+                <ImageView
+                    android:id="@+id/img_detail_photo1"
+                    android:layout_width="150dp"
+                    android:layout_height="220dp"
+                    android:src="@drawable/sample_0"
+                    android:layout_marginBottom="4dp"
+                    android:scaleType="centerCrop" />
+                <TextView
+                    android:id="@+id/judul1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_toEndOf="@id/img_detail_photo1"
+                    android:layout_toRightOf="@id/img_detail_photo1"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="Daddy Little Girl" />
+                <TextView
+                    android:id="@+id/harga1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/layout_button"
+                    android:layout_below="@id/judul1"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_toEndOf="@id/img_detail_photo1"
+                    android:layout_toRightOf="@id/img_detail_photo1"
+                    android:ellipsize="end"
+                    android:maxLines="5"
+                    android:text="Rp.45.000" />
+                <LinearLayout
+                    android:id="@+id/layout_button2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toEndOf="@id/img_detail_photo1"
+                    android:layout_toRightOf="@id/img_detail_photo1"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/btn_detail1"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="BELI"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/detail_utama2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="220dp"
+                android:layout_marginRight="8dp"
+                android:background="#000000"
+                android:layout_marginBottom="4dp"
+                card_view:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:padding="8dp"/>
+
+                <ImageView
+                    android:id="@+id/img_detail_photo2"
+                    android:layout_width="150dp"
+                    android:layout_height="190dp"
+                    android:src="@drawable/sample_1"
+                    android:layout_marginBottom="4dp"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/judul2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="166dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_toEndOf="@id/img_detail_photo2"
+                    android:layout_toRightOf="@id/img_detail_photo2"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="Auguste Dupin" />
+
+                <TextView
+                    android:id="@+id/harga2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/layout_button"
+                    android:layout_below="@id/judul2"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="166dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_toEndOf="@id/img_detail_photo2"
+                    android:layout_toRightOf="@id/img_detail_photo2"
+                    android:ellipsize="end"
+                    android:maxLines="5"
+                    android:text="Rp.30.000" />
+
+
+                <Button
+                    android:id="@+id/btn_detail2"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="160dp"
+                    android:layout_marginStart="165dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="BELI"
+                    android:textSize="12sp" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/detail_utama3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="440dp"
+                android:layout_marginRight="8dp"
+                android:background="#000000"
+                android:layout_marginBottom="4dp"
+                card_view:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:padding="8dp"/>
+
+                <ImageView
+                    android:id="@+id/img_detail_photo3"
+                    android:layout_width="150dp"
+                    android:layout_height="190dp"
+                    android:src="@drawable/sample_2"
+                    android:layout_marginBottom="4dp"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/judul3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="166dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_toEndOf="@id/img_detail_photo2"
+                    android:layout_toRightOf="@id/img_detail_photo2"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="Harry Potter and the Half Blood Prince" />
+
+                <TextView
+                    android:id="@+id/harga3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/layout_button"
+                    android:layout_below="@id/judul2"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="166dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_toEndOf="@id/img_detail_photo2"
+                    android:layout_toRightOf="@id/img_detail_photo2"
+                    android:ellipsize="end"
+                    android:maxLines="5"
+                    android:text="Rp.100.000" />
+
+
+                <Button
+                    android:id="@+id/btn_detail3"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="160dp"
+                    android:layout_marginStart="165dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="BELI"
+                    android:textSize="12sp" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/detail_utama4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="660dp"
+                android:layout_marginRight="8dp"
+                android:background="#000000"
+                android:layout_marginBottom="4dp"
+                card_view:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:padding="8dp"/>
+
+                <ImageView
+                    android:id="@+id/img_detail_photo4"
+                    android:layout_width="150dp"
+                    android:layout_height="190dp"
+                    android:src="@drawable/sample_3"
+                    android:layout_marginBottom="4dp"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/judul4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="166dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_toEndOf="@id/img_detail_photo2"
+                    android:layout_toRightOf="@id/img_detail_photo2"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="The Hobbit" />
+
+                <TextView
+                    android:id="@+id/harga4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/layout_button"
+                    android:layout_below="@id/judul2"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="166dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_toEndOf="@id/img_detail_photo2"
+                    android:layout_toRightOf="@id/img_detail_photo2"
+                    android:ellipsize="end"
+                    android:maxLines="5"
+                    android:text="Rp.100.000" />
+
+
+                <Button
+                    android:id="@+id/btn_detail4"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="160dp"
+                    android:layout_marginStart="165dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="BELI"
+                    android:textSize="12sp" />
+
+            </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>

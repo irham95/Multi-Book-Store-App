@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="action_list" type="id" />
+    <item name="action_grid" type="id" />
+    <item name="action_cardview" type="id" />
+    <item name="item_click_support" type="id" />
+    <item name="action_settings" type="id" />
+</resources>

@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/lblComments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Komentar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:textSize="20dp"
+        android:padding="10dp"/>
+    <EditText
+        android:id="@+id/txtComments"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:textSize="18sp"
+        android:layout_alignLeft="@+id/lblComments"
+        android:layout_below="@+id/lblComments"
+        android:layout_centerHorizontal="true"
+        android:background="#3222"
+        android:layout_margin="3dp"/>
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:text="Simpan"
+        android:layout_below="@+id/txtComments"
+        android:layout_alignRight="@+id/txtComments"
+        android:background="#f124"
+        android:textColor="#fff"
+        android:layout_margin="3dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnSave"
+        android:layout_alignBottom="@+id/btnSave"
+        android:layout_alignParentLeft="true"
+        android:text="Hapus"
+        android:background="#ff33"
+        android:textColor="#fff"
+        android:layout_margin="3dp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

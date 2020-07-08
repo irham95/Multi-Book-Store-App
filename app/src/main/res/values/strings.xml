@@ -1,0 +1,175 @@
+<resources>
+    <string name="app_name">Multi Book Store</string>
+    <string name="heroes_name">Nama Pahlawan</string>
+    <string name="detail">Detail</string>
+
+
+    <string-array name="daftar_jurusan">
+        <item>Ilmu komputer</item>
+        <item>Manajemen Informatika</item>
+        <item>Sastra Inggris</item>
+        <item>Ilmu Komunikasi</item>
+        <item>Farmasi</item>
+        <item>Kimia</item>
+
+    </string-array>
+
+
+    <string name="create_account"><font color="#00ff00">text</font></string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="register">Register</string>
+    <string name="back_to_login">Back to Login</string>
+
+
+    <string name="scan">Scan</string>
+
+
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">LANJUT</string>
+    <string name="skip">LEWATI</string>
+    <string name="start">MULAI</string>
+
+    <string name="slide_1_title">BERBAGAI BUKU BEST SELLER</string>
+    <string name="slide_1_desc">Tersedia Berbagai Buku Terbaru Dalam Maupun Luar Negeri</string>
+
+    <string name="slide_2_title">HARGA TERJANGKAU</string>
+    <string name="slide_2_desc">Harga yang Ditawarkan Sangat Terjangkau dan Penuh Potongan Harga</string>
+
+    <string name="slide_3_title">TOKO BUKU FISIK</string>
+    <string name="slide_3_desc">Kami Memili Toko Fisik Jika Anda Tidak Puas Hanya Melihat Online</string>
+
+    <string name="slide_4_title">JASA ANTAR</string>
+    <string name="slide_4_desc">Mengantar Bukumu Menempuh Perjalanan Menuju Rumah </string>
+
+
+    <style name="Text1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+    </style>
+
+    <style name="TextContent" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+    </style>
+
+    <string name="review_booking">%1$d Item | Rp. %2$d </string>
+
+    <style name="Textlain">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Textlain.field">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">16dp</item>
+
+    </style>
+
+    <style name="Textlain.value">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="text_nama">nama</string>
+    <string name="title_trainer">Mahasiswa</string>
+    <string name="name">Name</string>
+    <string name="description">Description</string>
+    <string name="imege_view">Image View</string>
+
+    <string-array name="data_name_mhs">
+        <item>Daddy Little Girl</item>
+        <item>Auguste Dupin</item>
+        <item>Harry Potter and the Half Blood Prince</item>
+        <item>The Hobbit</item>
+        <item>Laskar Pelangi</item>
+        <item>The Pale Horse</item>
+        <item>5 Hari menguasai AS dan SQLite</item>
+        <item>And Then There Were None</item>
+        <item>Nightmare Hour</item>
+        <item>The Mystery of the Yellow Room</item>
+        <item>The Haunted Mask</item>
+        <item>Harry Potter and the Sorcerers Stone</item>
+        <item>The Hunger Games</item>
+        <item>Twilight</item>
+        <item>Divergent</item>
+        <item>The Fault in our Stars</item>
+        <item>The Maze Runner</item>
+        <item>City of Bones</item>
+        <item>Negeri 5 Menara</item>
+        <item>5 CM</item>
+        <item>Edensor</item>
+        <item>Hapalan Shalat Delisa</item>
+        <item>Perahu Kertas</item>
+    </string-array>
+
+    <string-array name="data_description">
+        <item>Rp.45.000 </item>
+        <item>Rp.30.000</item>
+        <item>Rp.100.000</item>
+        <item>Rp.90.000</item>
+        <item>Rp.40.000</item>
+        <item>Rp.65.000</item>
+        <item>Rp.50.000</item>
+        <item>Rp.65.000</item>
+        <item>Rp.25.000</item>
+        <item>Rp.40.000</item>
+        <item>Rp.25.000</item>
+        <item>Rp.100.000</item>
+        <item>Rp.80.000</item>
+        <item>Rp.55.000</item>
+        <item>Rp.55.000</item>
+        <item>Rp.65.000</item>
+        <item>Rp.45.000</item>
+        <item>Rp.55.000</item>
+        <item>Rp.70.000</item>
+        <item>Rp.45.000</item>
+        <item>Rp.70.000</item>
+        <item>Rp.40.000</item>
+        <item>Rp.50.000</item>
+    </string-array>
+
+    <integer-array name="data_foto_mhs">
+        <item>@drawable/sample_0</item>
+        <item>@drawable/sample_1</item>
+        <item>@drawable/sample_2</item>
+        <item>@drawable/sample_3</item>
+        <item>@drawable/sample_4</item>
+        <item>@drawable/sample_5</item>
+        <item>@drawable/sample_6</item>
+        <item>@drawable/sample_7</item>
+        <item>@drawable/sample_8</item>
+        <item>@drawable/sample_9</item>
+        <item>@drawable/sample_10</item>
+        <item>@drawable/sample_11</item>
+        <item>@drawable/sample_12</item>
+        <item>@drawable/sample_13</item>
+        <item>@drawable/sample_14</item>
+        <item>@drawable/sample_15</item>
+        <item>@drawable/sample_16</item>
+        <item>@drawable/sample_17</item>
+        <item>@drawable/sample_18</item>
+        <item>@drawable/sample_19</item>
+        <item>@drawable/sample_20</item>
+        <item>@drawable/sample_21</item>
+        <item>@drawable/sample_22</item>
+    </integer-array>
+
+
+</resources>
+

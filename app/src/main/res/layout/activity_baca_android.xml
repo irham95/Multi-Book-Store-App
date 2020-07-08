@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BacaSismik">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/relatif1"
+        android:layout_height="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            android:background="#ffffff">
+            <ImageView
+                android:src="@drawable/marginandroid"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_below="@+id/relatif1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scroll1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/yunilogo"/>
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/mikro2"/>
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/sample_3"/>
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/sample_4"/>
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/sample_5"/>
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/sample_6"/>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="490dp"
+                android:src="@drawable/ai1" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="490dp"
+                android:src="@drawable/ai2" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="490dp"
+                android:src="@drawable/ai3" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="490dp"
+                android:src="@drawable/ai4" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="490dp"
+                android:src="@drawable/ai5" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="490dp"
+                android:src="@drawable/ai6" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/marginbotom3"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="#8BC34A"
+        android:gravity="center"
+        tools:context=".KatalogBuku">
+
+
+
+        <View
+            android:id="@+id/viewThree"
+            android:layout_width="352dp"
+            android:layout_height="9dp"
+            android:background="#000000"
+            android:layout_marginTop="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view2Four"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/grip_card"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="160dp"
+                android:layout_height="180dp"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#E91E63"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="66dp"
+                        android:layout_height="64dp"
+                        android:src="@drawable/library" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:text="DAFTAR BUKU"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#3F51B5"
+                        android:layout_margin="10dp"/>
+                    <Button
+                        android:id="@+id/btn_daftarbukusaya"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="LIHAT"
+                        android:background="#f124"
+                        android:textSize="20sp"
+                        android:textColor="#ffff"
+                        android:layout_margin="10dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/blows_card"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+
+                android:layout_width="160dp"
+                android:layout_height="180dp"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#DF756D"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:src="@drawable/listrich"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:text="LIST TOKO BUKU"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#DD2525"
+                        android:layout_margin="10dp"/>
+                    <Button
+                        android:id="@+id/btn_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="LIHAT"
+                        android:background="#f124"
+                        android:textSize="20sp"
+                        android:textColor="#ffff"
+                        android:layout_margin="10dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/service_card"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="160dp"
+                android:layout_height="180dp"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#009688"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:src="@drawable/gallery"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:text="GALERI"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#9C27B0"
+                        android:layout_margin="10dp"/>
+                    <Button
+                        android:id="@+id/btn_gallery"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="lihat"
+                        android:background="#f124"
+                        android:textSize="20sp"
+                        android:textColor="#ffff"
+                        android:layout_margin="10dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/equipment_card"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+
+                android:layout_width="160dp"
+                android:layout_height="180dp"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#9C27B0"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:src="@drawable/book2"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:text="BACA EBOOK"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#4CAF50"
+                        android:layout_margin="10dp"/>
+                    <Button
+                        android:id="@+id/btn_ebookonline"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="lihat"
+                        android:background="#f124"
+                        android:textSize="20sp"
+                        android:textColor="#ffff"
+                        android:layout_margin="10dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:id="@+id/view2Four2"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:background="#000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/viewThree3"
+            android:layout_width="352dp"
+            android:layout_height="9dp"
+            android:background="#000000"
+            android:layout_marginTop="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:text="------BUKU KAMI------"/>
+
+        <View
+            android:id="@+id/view2Four4"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/service_card2"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="100dp"
+                android:layout_height="180dp"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#2196F3"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="84dp"
+                        android:layout_height="94dp"
+                        android:src="@drawable/yunilogo"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textSize="10dp"
+                        android:layout_marginTop="0dp"
+                        android:text="Pembelajaran Mobile IDE"/>
+
+                    <Button
+                        android:id="@+id/bacaandroid"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="BACA"
+                        android:background="#f124"
+                        android:textSize="15sp"
+                        android:textColor="#ffff"
+                        android:layout_margin="10dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/equipment_card2"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+
+                android:layout_width="100dp"
+                android:layout_height="180dp"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#FFC107"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="84dp"
+                        android:layout_height="94dp"
+                        android:src="@drawable/mikro2"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textSize="10dp"
+                        android:layout_marginTop="0dp"
+                        android:text="Buku Sistem Mikroprosesor"/>
+
+                    <Button
+                        android:id="@+id/bacasismik"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="BACA"
+                        android:background="#f124"
+                        android:textSize="15sp"
+                        android:textColor="#ffff"
+                        android:layout_margin="10dp"/>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:id="@+id/view2Four3"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:background="#000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+
+
+
+
+        <View
+            android:id="@+id/viewThree2"
+            android:layout_width="352dp"
+            android:layout_height="9dp"
+            android:background="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </LinearLayout>
+</ScrollView>

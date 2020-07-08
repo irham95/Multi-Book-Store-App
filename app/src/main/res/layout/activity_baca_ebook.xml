@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="#B83A45"
+        android:gravity="center"
+        tools:context=".KatalogBuku">
+
+
+
+        <View
+            android:id="@+id/viewThree"
+            android:layout_width="352dp"
+            android:layout_height="9dp"
+            android:background="#000000"
+            android:layout_marginTop="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:text="------PILIH EBOOK YANG TERSEDIA------"/>
+
+        <View
+            android:id="@+id/view2Four"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/grip_card"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="160dp"
+                android:layout_height="210dp"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#CFC7CA"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="106dp"
+                        android:layout_height="134dp"
+                        android:src="@drawable/tintin" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:layout_marginTop="0dp"
+                        android:text="Petualangan Tintin : Lotus Biru"/>
+
+                    <Button
+                        android:id="@+id/bacatintin"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="BACA"
+                        android:background="#f124"
+                        android:textSize="15sp"
+                        android:textColor="#ffff"
+                        android:layout_margin="10dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/blows_card"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+
+                android:layout_width="160dp"
+                android:layout_height="210dp"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#A7D2F5"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="106dp"
+                        android:layout_height="134dp"
+                        android:src="@drawable/gs1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:text="Goosebumps : Manusia Serigala"
+                        android:textAlignment="center"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/bacagoosebumps"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_margin="10dp"
+                        android:background="#f124"
+                        android:text="BACA"
+                        android:textColor="#ffff"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/service_card"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="160dp"
+                android:layout_height="210dp"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#45A79D"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="106dp"
+                        android:layout_height="134dp"
+                        android:src="@drawable/fear" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:layout_marginTop="0dp"
+                        android:text="Fear Street Saga : Pengkhianatan"/>
+
+                    <Button
+                        android:id="@+id/bacafearstreet"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="BACA"
+                        android:background="#f124"
+                        android:textSize="15sp"
+                        android:textColor="#ffff"
+                        android:layout_margin="10dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/equipment_card"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+
+                android:layout_width="160dp"
+                android:layout_height="210dp"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#B4CE95"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="106dp"
+                        android:layout_height="134dp"
+                        android:src="@drawable/narnia" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:layout_marginTop="0dp"
+                        android:text="Narnia : Keponakan Penyihir"/>
+
+                    <Button
+                        android:id="@+id/bacanarnia"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="BACA"
+                        android:background="#f124"
+                        android:textSize="15sp"
+                        android:textColor="#ffff"
+                        android:layout_margin="10dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:id="@+id/view2Four2"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:background="#000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/viewThree3"
+            android:layout_width="352dp"
+            android:layout_height="9dp"
+            android:background="#000000"
+            android:layout_marginTop="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:text="------BUKU KAMI------"/>
+
+        <View
+            android:id="@+id/view2Four4"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/service_card2"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="100dp"
+                android:layout_height="180dp"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#2196F3"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="84dp"
+                        android:layout_height="94dp"
+                        android:src="@drawable/yunilogo"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textSize="10dp"
+                        android:layout_marginTop="0dp"
+                        android:text="Pembelajaran Mobile IDE"/>
+
+                    <Button
+                        android:id="@+id/bacaandroid"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="BACA"
+                        android:background="#f124"
+                        android:textSize="15sp"
+                        android:textColor="#ffff"
+                        android:layout_margin="10dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/equipment_card2"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+
+                android:layout_width="100dp"
+                android:layout_height="180dp"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#FFC107"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="84dp"
+                        android:layout_height="94dp"
+                        android:src="@drawable/mikro2"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textSize="10dp"
+                        android:layout_marginTop="0dp"
+                        android:text="Buku Sistem Mikroprosesor"/>
+
+                    <Button
+                        android:id="@+id/bacasismik"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="BACA"
+                        android:background="#f124"
+                        android:textSize="15sp"
+                        android:textColor="#ffff"
+                        android:layout_margin="10dp"/>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:id="@+id/view2Four3"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:background="#000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+
+
+
+
+        <View
+            android:id="@+id/viewThree2"
+            android:layout_width="352dp"
+            android:layout_height="9dp"
+            android:background="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </LinearLayout>
+</ScrollView>

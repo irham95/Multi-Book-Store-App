@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#770101"
+    android:gravity="center"
+    tools:context=".SedangdiBangun">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/logo"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/store"
+        android:layout_marginStart="155dp"
+        android:layout_alignParentStart="true" />
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:id="@+id/teks"
+        android:src="@drawable/book"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/Utama"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_marginTop="115dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:text="Multi Book Store"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:textSize="21sp"/>
+    <TextView
+        android:layout_marginTop="160dp"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_height="wrap_content"
+        android:text="SORRY, WE'RE DOWN FOR SCHEDULED \n MAINTENANCE RIGHT NOW"
+        android:textColor="#fff"
+        android:textSize="14sp"/>
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:id="@+id/version"
+        android:src="@drawable/versi"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="100dp"
+        android:layout_below="@+id/teks"
+        android:layout_alignParentStart="true" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgclocks"
+    tools:context=".Jam">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="43dp"
+        android:text="Sudah Berapa Bukukah yang Anda Baca \n Pada Hari ini?"
+        android:textAlignment="center"
+        android:textColor="#ECEFF5"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/teks2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sekarang Jam :"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="39dp" />
+
+    <TextClock
+        android:id="@+id/jam1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/teks2"
+        android:layout_alignBottom="@+id/teks2"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="59dp"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:text="Munculkan Jam Digital"
+        android:textColor="#FFFFFF"
+        android:onClick="showTextClock"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/teks2"
+        android:layout_alignParentStart="true" />
+
+    <TextClock
+        android:id="@+id/jam2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="38dp"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:textIsSelectable="false"
+        android:textSize="58sp"
+        android:layout_marginBottom="19dp"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/version"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="690dp"
+        android:layout_marginBottom="9dp"
+        android:src="@drawable/versi" />
+
+</RelativeLayout>
+

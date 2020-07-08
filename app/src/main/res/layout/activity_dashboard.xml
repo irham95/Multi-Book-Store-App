@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.gridlayout.widget.GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:columnCount="2"
+    app:rowCount="2"
+    app:orientation="horizontal"
+    >
+
+    <FrameLayout
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        android:background="#E91E63"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:id="@+id/user"
+                android:src="@drawable/user"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:textColor="#000000"
+                android:id="@+id/btn_profil"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user"
+                android:layout_centerHorizontal="true"
+                android:text="Profile"/>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        android:background="#D2691E">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:id="@+id/job"
+                android:src="@drawable/pin"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:id="@+id/btn_searchus"
+                android:textColor="#000000"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/job"
+                android:layout_centerHorizontal="true"
+                android:text="Search"/>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        android:background="#8BC34A">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:id="@+id/notif"
+                android:src="@drawable/clock"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:id="@+id/btn_notif"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/notif"
+                android:layout_centerHorizontal="true"
+                android:text="JAM"/>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        android:background="#4CAF50"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:id="@+id/mail"
+                android:src="@drawable/mail"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:id="@+id/btn_sms"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mail"
+                android:layout_centerHorizontal="true"
+                android:text="MSG"/>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        android:background="#03A9F4"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:id="@+id/btn_scanner"
+                android:src="@drawable/scan"/>
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_scanner"
+                android:id="@+id/btn_scannerbook"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="9dp"
+                android:text="SCAN"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        android:background="#3F51B5">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:id="@+id/rev"
+                android:src="@drawable/like"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:textSize="20sp"
+                android:id="@+id/btn_review"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rev"
+                android:layout_centerHorizontal="true"
+                android:textColor="#000000"
+                android:text="REVIEW "/>
+        </RelativeLayout>
+    </FrameLayout>
+</androidx.gridlayout.widget.GridLayout>

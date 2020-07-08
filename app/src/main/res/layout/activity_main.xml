@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#770101"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:id="@+id/logo"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/store"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <ImageView
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:id="@+id/Utama"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <ImageView
+        android:layout_width="190dp"
+        android:layout_height="100dp"
+        android:id="@+id/teks"
+        android:src="@drawable/textawal"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Utama"
+        android:layout_alignParentStart="true" />
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:id="@+id/version"
+        android:src="@drawable/versi"
+        android:layout_marginTop="100dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/teks"
+        android:layout_alignParentStart="true" />
+
+
+
+</RelativeLayout>
